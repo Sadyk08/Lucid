@@ -1,0 +1,167 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+.top-block{
+  background: url(../images/bg.png) #100e15 no-repeat center ;
+  background-size: cover;
+  min-height: 639px;
+
+}
+.navbar-right {
+  a {
+    color: white;
+
+
+  }
+  li {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+}
+span.icon-bar{
+  background: white!important;
+}
+.navbar-brand{
+  a{
+   img{
+     margin-top: 20px;
+   }
+  }
+}
+nav{
+  ul{
+
+    li{
+      position: relative;
+      margin-top: 22px;
+      padding-left: 0;
+      :last-child{
+        &active{
+          color: orange;
+          background: transparent;
+        }
+      }
+      a{
+        padding-left: 0;
+      }
+      &:after{
+        width: 42px;
+        height: 2px;
+        background-color: #008ed6;
+        display: block;
+        content: "";
+        opacity: 0;
+        transition: 0.3s;
+        position: relative;
+        z-index: 1;
+      }
+      &:before{
+        content: "";
+        background-color: #16151b;
+        height: 2px;
+        width: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        z-index: 2;
+        opacity: 0;
+      }
+      &:hover{
+        a{
+          background-color: transparent!important;
+        }
+        &:after{
+          opacity: 1;
+        }
+        &:before{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.menu_text{
+  margin-top: 100px;
+  h5{
+text-transform: uppercase;
+    color: #2b669a;
+  }
+  h1{
+    color: #FFFFFF;
+    margin-top: 32px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+
+  }
+  p{
+    color: #999999;
+    margin-top: 36px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: inherit;
+  }
+  a{
+    background-color: transparent;
+    border: solid #434246 4px;
+    border-radius: 2px;
+    padding: 21px 27px 20px 28px;
+    margin: 63px 10px 0 10px;
+    color: white;
+    text-transform: uppercase;
+    :hover{
+      background-color: #008ed6;
+      border: none;
+      transition: 1.5s;
+    }
+  }
+}
+.phone {
+  float: right;
+  position: fixed;
+  bottom: 331px;
+  right: 105px;
+}
+
+.btn-default {
+ background-image: none;
+  a:hover{
+    background-color: #008ed6;
+    border: none;
+    transition: 1.5s;
+  }
+}
+.btn .btn-default a:hover{
+  background-color: #008ed6;
+  border: none;
+  transition: 1.5s;
+}
+
+//.active {
+//  a {
+//    color: green;
+//  }
+//  .top_block {
+//
+//    nav {
+//      color: red;
+//      ul {
+//        li {
+//          a {
+//            &:hover {
+//              &:after {
+//                background-color: orange);
+//              }
+//              &:before {
+//                background-color: orange;
+//              }
+//
+//            }
+//          }
+//
+//        }
+//      }
+//    }
+//  }
+//}
+
